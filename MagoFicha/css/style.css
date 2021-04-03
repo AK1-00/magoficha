@@ -1,0 +1,121 @@
+body 
+{
+    background-color: black;
+    color:white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
+}
+
+/* . for class */
+.content
+{
+    margin: auto;
+    max-width: 800px;
+    height: 100%;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+}
+
+.info
+{
+    margin: auto;
+    max-width: 100%;
+
+    position: relative;
+    background-color: black;
+}
+
+.atributos
+{
+    margin: auto;
+    max-width: 100%;
+
+    position: relative;
+    background-color: black;
+}
+
+.habilidades
+{
+    margin: auto;
+    max-width: 100%;
+
+    position: relative;
+    background-color: black;
+}
+
+.esferas
+{
+    margin: auto;
+    max-width: 100%;
+
+    position: relative;
+    background-color: black;
+}
+
+.vantagens
+{
+    margin: auto;
+    max-width: 100%;
+
+    position: relative;
+    background-color: black;
+}
+
+.holder
+{
+    margin: auto;
+    max-width: 100%;
+    height: 150px;
+    position: relative;
+    border-radius: 10px;
+    background-color: rgb(27, 27, 27);
+    text-align: center;
+}
+
+table, td, tr {
+    margin: auto;
+    font-size: 13px;
+    text-align: center;
+    min-width:180px;
+    
+}
+
+p {
+    font-size: 18px;
+    text-align: center;
+    border-top: 2px double white;
+    border-bottom: 2px double white;
+    line-height: 90%;
+}
+
+input
+{
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(83, 83, 83);
+    text-align: center;
+    border: none;
+    font-size: 12px;
+}
+
+b
+{
+    font-size: 16px;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+::-webkit-scrollbar-track {
+
+    background-color: black;
+    border-left: 2px solid rgb(61, 61, 61);
+}
+ 
+::-webkit-scrollbar-thumb {
+
+    background-color: rgba(61, 61, 61, 0.712);
+}
+
+/* # for id*/

@@ -1,0 +1,198 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Mago: A Ascensão</title>
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+    
+</head>
+<body>
+    <script src="js/scripts.js"></script>
+    <div class="content">
+        <form  id="mainform" action="#" onsubmit="SubmitForm();return false">
+        <div class="info">
+            <table>
+                <tr>
+                    <td>Nome: <br> <input type="text" id="charname" name="charname"> </td>
+                    <td>Natureza: <br> <input type="text" id="natureza" name="natureza"> </td>
+                    <td>Tradição: <br> <input type="text" id="tradition" name="tradition"> </td>
+                </tr>
+                <tr>
+                    <td>Jogador: <br> <input type="text" id="playername" name="playername"> </td>
+                    <td>Essência: <br> <input type="text" id="essence" name="essence"> </td>
+                    <td>Comportamento: <br> <input type="text" id="comportamento" name="comportamento"> </td>
+                </tr>
+                <tr>
+                    <td>Crônica: <br> <input type="text" id="cronica" name="cronica"> </td>
+                    <td>Mentor: <br> <input type="text" id="mentor" name="mentor"> </td>
+                    <td>Cabala: <br> <input type="text" id="cabala" name="cabala"> </td>
+                </tr>
+            </table>
+        </div>
+
+        <p>Atributos</p>
+        <div class="atributos">
+            <table>
+                <tr>
+                    <td><b>Físicos</b></td>
+                    <td><b>Sociais</b></td>
+                    <td><b>Mentais</b></td>
+                </tr>
+                <tr>
+                    <td>Força: <br> <input type="number" id="forca" name="forca" min="1" max="5"> </td>
+                    <td>Carisma: <br> <input type="number" id="carisma" name="carisma" min="1" max="5"> </td>
+                    <td>Percepção: <br> <input type="number" id="percepcao" name="percepcao" min="1" max="5"> </td>
+                </tr>
+                <tr>
+                    <td>Destreza: <br> <input type="number" id="destreza" name="destreza" min="1" max="5"> </td>
+                    <td>Manipulação: <br> <input type="number" id="manipulacao" name="manipulacao" min="1" max="5"> </td>
+                    <td>Inteligência: <br> <input type="number" id="inteligencia" name="inteligencia" min="1" max="5"> </td>
+                </tr>
+                <tr>
+                    <td>Vigor: <br> <input type="number" id="vigor" name="vigor" min="1" max="5"> </td>
+                    <td>Aparência: <br> <input type="number" id="aparencia" name="aparencia" min="1" max="5"> </td>
+                    <td>Raciocínio: <br> <input type="number" id="raciocinio" name="raciocinio" min="1" max="5"> </td>
+                </tr>
+            </table>
+        </div>
+
+        <p>Habilidades</p>
+        <div class="habilidades">
+            <table>
+                <tr>
+                    <td><b>Talentos</b></td>
+                    <td><b>Perícias</b></td>
+                    <td><b>Conhecimentos</b></td>
+                </tr>
+                <tr>
+                    <td>Prontidão: <br> <input type="number" id="prontidao" name="prontidao" min="1" max="5"> </td>
+                    <td>Dô: <br> <input type="number" id="do" name="do" min="1" max="5"> </td>
+                    <td>Computador: <br> <input type="number" id="computador" name="computador" min="1" max="5"> </td>
+                </tr>
+                <tr>
+                    <td>Esportes: <br> <input type="number" id="esportes" name="esportes" min="1" max="5"> </td>
+                    <td>Condução: <br> <input type="number" id="conducao" name="conducao" min="1" max="5"> </td>
+                    <td>Cosmologia: <br> <input type="number" id="cosmologia" name="cosmologia" min="1" max="5"> </td>
+                </tr>
+                <tr>
+                    <td>Consciência: <br> <input type="number" id="consciencia" name="consciencia" min="1" max="5"> </td>
+                    <td>Etiqueta: <br> <input type="number" id="etiqueta" name="etiqueta" min="1" max="5"> </td>
+                    <td>Cultura: <br> <input type="number" id="cultura" name="cultura" min="1" max="5"> </td>
+                </tr>
+                <tr>
+                    <td>Briga: <br> <input type="number" id="briga" name="briga" min="1" max="5"> </td>
+                    <td>Armas de Fogo: <br> <input type="number" id="armasdefogo" name="armasdefogo" min="1" max="5"> </td>
+                    <td>Enigmas: <br> <input type="number" id="enigmas" name="enigmas" min="1" max="5"> </td>
+                </tr>
+                <tr>
+                    <td>Esquiva: <br> <input type="number" id="esquiva" name="esquiva" min="1" max="5"> </td>
+                    <td>Liderança: <br> <input type="number" id="lideranca" name="lideranca" min="1" max="5"> </td>
+                    <td>Investigação: <br> <input type="number" id="investigacao" name="investigacao" min="1" max="5"> </td>
+                </tr>
+                <tr>
+                    <td>Interpretação: <br> <input type="number" id="interpretacao" name="interpretacao" min="1" max="5"> </td>
+                    <td>Meditação: <br> <input type="number" id="meditacao" name="meditacao" min="1" max="5"> </td>
+                    <td>Direito: <br> <input type="number" id="direito" name="direito" min="1" max="5"> </td>
+                </tr>
+                <tr>
+                    <td>Instrução: <br> <input type="number" id="instrucao" name="instrucao" min="1" max="5"> </td>
+                    <td>Armas Brancas: <br> <input type="number" id="armasbrancas" name="armasbrancas" min="1" max="5"> </td>
+                    <td>Linguística: <br> <input type="number" id="linguistica" name="linguistica" min="1" max="5"> </td>
+                </tr>
+                <tr>
+                    <td>Intuição: <br> <input type="number" id="intuicao" name="intuicao" min="1" max="5"> </td>
+                    <td>Pesquisa: <br> <input type="number" id="pesquisa" name="pesquisa" min="1" max="5"> </td>
+                    <td>Erudição: <br> <input type="number" id="erudicao" name="erudicao" min="1" max="5"> </td>
+                </tr>
+                <tr>
+                    <td>Intimidação: <br> <input type="number" id="intimidacao" name="intimidacao" min="1" max="5"> </td>
+                    <td>Furtividade: <br> <input type="number" id="furtividade" name="furtividade" min="1" max="5"> </td>
+                    <td>Medicina: <br> <input type="number" id="medicina" name="medicina" min="1" max="5"> </td>
+                </tr>
+                <tr>
+                    <td>Manha: <br> <input type="number" id="manha" name="manha" min="1" max="5"> </td>
+                    <td>Sobrevivência: <br> <input type="number" id="sobrevivencia" name="sobrevivencia" min="1" max="5"> </td>
+                    <td>Ocultismo: <br> <input type="number" id="ocultismo" name="ocultismo" min="1" max="5"> </td>
+                </tr>
+                <tr>
+                    <td>Lábia: <br> <input type="number" id="labia" name="labia" min="1" max="5"> </td>
+                    <td>Tecnologia: <br> <input type="number" id="tecnologia" name="tecnologia" min="1" max="5"> </td>
+                    <td>Ciência: <br> <input type="number" id="ciencia" name="ciencia" min="1" max="5"> </td>
+                </tr>
+            </table>
+        </div>
+
+        <p>Esferas</p>
+        <div class="esferas">
+            <table>
+                <tr>
+                    <td>Correspondência: <br> <input type="number" id="correspondencia" name="correspondencia" min="1" max="5"> </td>
+                    <td>Vida: <br> <input type="number" id="vida" name="vida" min="1" max="5"> </td>
+                    <td>Primórdio: <br> <input type="number" id="primordio" name="primordio" min="1" max="5"> </td>
+                </tr>
+                <tr>
+                    <td>Entropia: <br> <input type="number" id="entropia" name="entropia" min="1" max="5"> </td>
+                    <td>Mente: <br> <input type="number" id="mente" name="mente" min="1" max="5"> </td>
+                    <td>Espírito: <br> <input type="number" id="espirito" name="espirito" min="1" max="5"> </td>
+                </tr>
+                <tr>
+                    <td>Forças: <br> <input type="number" id="forcas" name="forcas" min="1" max="5"> </td>
+                    <td>Matéria: <br> <input type="number" id="materia" name="materia" min="1" max="5"> </td>
+                    <td>Tempo: <br> <input type="number" id="tempo" name="tempo" min="1" max="5"> </td>
+                </tr>
+            </table>
+        </div>
+
+        <P>Vantagens</p>
+        <div class="vantagens">
+            <div class="slidecontainer">
+
+                <table>
+                    <tr>
+                        <td>Antecedentes</td>
+                        <td>Arete</td>
+                        <td>Vitalidade</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" size="10px" id="antecedente1" nome="antedecendete1"> <input type="number" min="1" max="5" id="antecedente1valor" nome="antedecendete1valor">  </td>
+                        <td><input type="number" id="arete" name="arete" min="1" max="10"></td>
+                        <td><input type ="number" id="vitalidade" name="vitalidade" min="0" max="7"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" size="10px" id="antecedente2" nome="antedecendete2"> <input type="number" min="1" max="5"  id="antecedente2valor" nome="antedecendete2valor">  </td>
+                        <td>Força de Vontade</td>
+                        <td>Experiência</td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" size="10px" id="antecedente3" nome="antecedente3"> <input type="number" min="1" max="5" id="antecedente3valor" nome="antedecendete3valor" >  </td>
+                        <td><input type="number" id="vontademax" name="vontademax" min="1" max="10"> <input type="number" id="vontade" name="vontade" min="1" max="10"> </td>
+                        <td><input type="number" name="exp" id="exp"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" size="10px" id="antecedente4" nome="antecedente4" > <input type="number" min="1" max="5"  id="antecedente4valor" nome="antecedente4valor" >  </td>
+                        <td> Quintessência: <input type="number" id="quint" name="quint" min="1" max="10"></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" size="10px" id="antecedente5" nome="antecedente5" > <input type="number" min="1" max="5"  id="antecedente5valor" nome="antecedente5valor" >  </td>
+                        <td>Paradoxo: <input type="number" id="paradoxo" name="paradoxo" min="1" max="10"></td>
+                        <td><button type="submit">Salvar</button></td>
+                    </tr>
+
+                </table>
+
+                
+              </div>
+            
+        </div>
+        </form>
+        <p>Carregar Personagem</p>
+        <div class="holder" id="holder">
+            <input type="file" id="file-selector" accept=".json">
+            <br><br>
+            <input type='button' id='btnLoad' value='Load' onclick='loadFile();'>
+        </div>
+    </div>
+</body>
+</html>
